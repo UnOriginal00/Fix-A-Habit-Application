@@ -3,10 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fix_A_Habit_Application.WelcomePage"
              Title="WelcomePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <!-- Background Gradient -->
+        
+
+
+        <VerticalStackLayout>
+
+            <!-- App Logo -->
+            <Image Source="logo.png"
+                WidthRequest="140" 
+                HeightRequest="140"
+                Opacity="0">
+            </Image>
+
+            <!-- App Title -->
+            <Label Text="Fix Your Habits"
+                FontSize="32"
+                TextColor="White"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Opacity="0">
+                
+                <Label.Triggers>
+
+                </Label.Triggers>
+            </Label>
+
+            <!-- Subtitle -->
+            <Label Text="Build routines • Track progress • Improve daily"
+                FontSize="14"
+                TextColor="White"
+                Opacity="0.8"
+                HorizontalOptions="Center"/>
+
+            <!-- Get Started Button TEST-->
+            <Button Text="Get Started"
+                FontSize="18"
+                Padding="12,6"
+                BackgroundColor="#FF6F61"
+                TextColor="White"
+                CornerRadius="25"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"/>
+
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>

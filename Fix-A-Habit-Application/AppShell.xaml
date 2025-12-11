@@ -6,9 +6,13 @@
     xmlns:local="clr-namespace:Fix_A_Habit_Application"
     Title="Fix_A_Habit_Application">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent Title="Welcome" ContentTemplate="{DataTemplate local:WelcomePage}" Route="WelcomePage"/>
+    <ShellContent Title="SignUp" ContentTemplate="{DataTemplate local:SignUpPage}" Route="SignUpPage"/>
+    <ShellContent Title="Login" ContentTemplate="{DataTemplate local:LoginPage}" Route="LoginPage"/>
+    <ShellContent Title="SplashPage" ContentTemplate="{DataTemplate local:SplashPage}" Route="SplashPage"/>
+    <ShellContent Title="DashBoard" ContentTemplate="{DataTemplate local:DashBoardPage}" Route="DashBoardPage"/>
+    <ShellContent Title="Settings" ContentTemplate="{DataTemplate local:SettingsPage}" Route="SettngsPage"/>
+    <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
+    
 
 </Shell>
